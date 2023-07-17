@@ -100,4 +100,5 @@
         <rules>
             <stat name="charisma" value="3" />
         </rules>
+    </element>
 </elements>
