@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Beefer's Items</name>
+		<description></description>
+		<author url="">Seiliu</author>
+		<update version="0.0.2">
+			<file name="beefers-items.index" url="" />
+		</update>
+	</info>
+	<files>
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-weapons.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-gear.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
+		<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/custom-features.xml" />
+	</files>
+</index>
