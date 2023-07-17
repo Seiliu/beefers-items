@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Armors</name>
+		<description></description>
+		<author url="">Seiliu</author>
+		<update version="0.0.6">
+			<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefersitems/main/custom-features.xml" />
+		</update>
+	</info>
+    <element name="Second Wind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SCOURGEARMOR_SECONDWIND">
+        <description>
+            <p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</p>
+            <p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>You regain 1d10+{{level}} hp.</description>
+        </sheet>
+    </element>
+</elements>

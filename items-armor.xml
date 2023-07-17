@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Armors</name>
+		<description></description>
+		<author url="">Seiliu</author>
+		<update version="0.0.6">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefersitems/main/items-armor.xml" />
+		</update>
+	</info>
+    <element name="Shaman's outfit" type="Armor" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SHAMANSOUTFIT">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>The outfit of a Shaman, imbued with magical power, it empowers spellcasters and non-spellcasters alike, though in different ways:</p>
+            <b>Note: THIS ITEM REQUIRES ATTUNEMENT IF YOU ARE NOT A SPELLCASTER.</b>
+            <ul>
+                <li>Equipping this outfit grants the wearer +5 to their spellcasting modifier</li>
+                <li>This outfit grants +3 to base AC.</li>
+                <li>If the wearer is not a spellcaster, they are granted 3 cantrip slots from any class.</li>
+            </ul>
+        </description>
+        <setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">-</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">Natural AC + 3</set>
+            <set name="attunement" requirements="!ID_WOTC_PHB_CLASS_WARLOCK,!ID_WOTC_PHB_CLASS_SORCERER,!ID_WOTC_PHB_CLASS_DRUID,!ID_WOTC_PHB_CLASS_CLERIC,!ID_WOTC_PHB_CLASS_WIZARD">true</set>
+        </setters>
+        <rules>
+            <select type="Spell" name="Cantrip (Shaman's Outfit)" supports="0" number="3" spellcasting="Any" requirements="!ID_WOTC_PHB_CLASS_WARLOCK,!ID_WOTC_PHB_CLASS_SORCERER,!ID_WOTC_PHB_CLASS_DRUID,!ID_WOTC_PHB_CLASS_CLERIC,!ID_WOTC_PHB_CLASS_WIZARD"/>
+            <stat name="ac:armored:armor" value="10" />
+            <stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+			<stat name="spellcasting:attack" value="5" />
+        </rules>
+    </element>
+    <element name="Armor of the Scourge" type="Armor" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SCOURGEARMOR">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>Description soon to be determined by beefer. For now, just imagine it how you wish!</p>
+            <ul>
+                <li>Wearing this armor grants the wearer the ability to Rage.</li>
+                <li><p>Wearing this armor grants the wearer the ability to use <b>either</b> second wind or action surge, but once one has been used, the other cannot be used until the cooldown is over.</p></li>
+            </ul>
+        </description>
+        <setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">-</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">15 + Strength modifier</set>
+            <set name="attunement">false</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="15" />
+            <stat name="ac:armored:enhancement" value="strength:modifier" bonus="enhancement" />
+            <stat name="ac:armored:misc" value="-dexterity:modifier" />
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SCOURGEARMOR_SECONDWIND" />
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_RAGE" />
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" />
+        </rules>
+    </element>
+</elements>

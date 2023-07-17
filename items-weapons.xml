@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Armors</name>
+		<description></description>
+		<author url="">Seiliu</author>
+		<update version="0.0.6">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefersitems/main/items-weapons.xml" />
+		</update>
+	</info>
+    <element name="Caledfwlch" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_CALEDFWLCH">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>A pearly white longsword with a hilt pointed on both ends. It is too powerful to wield with only one hand. This item is <b>legendary.</b></p>
+            <ul>
+                <li>When in the sun, you obtain an extra 2d6 or +3 damage, whichever is higher.</li>
+                <li>When attacking an enemy with an AC higher than yours, gain advantage on all hits against them.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="slashing">2d6+3</set>
+            <set name="slot">twohand</set>
+        </setters>
+    </element>
+    <element name="Drain Spear" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_DRAINSPEAR">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+        <description>
+            <p>This weapon is a mere ordinary spear with a silvery tint.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="piercing">1d10+1</set>
+            <set name="slot">onehand</set>
+            <set name="versatile">1d12+1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR</set>
+            <set name="range">20/60</set>
+        </setters>
+    </element>
+    <element name="Hero's Blade of Wisdom" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPONS_HEROSBLADEOFWISDOM">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>A glorious shortsword with magical runes running across it's silver hilt.</p>
+            <p><b>This item requires 14 wisdom to wield.</b></p>
+            <ul>
+                <li>As a bonus action, the wielder creates mystical fireballs to absorb damage that would normally damage them.</li>
+                <li>A dice roll of 1d3 will determine how many mystical fireballs are summoned.</li>
+                <li>Each fireball will absorb 4 damage before disappearing.</li>
+                <li>This ability can be used as an action, increasing the dice roll to summon fireballs to 1d6, and the fireballs will absorb 8 damage each.</li>
+                <li>Can be used twice per short rest.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="piercing">3d4+3</set>
+            <set name="slot">onehand</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Bestie Blade" type="Weapon" source="Beefer's items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BESTIEBLADE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Visual description not yet added by beefer. For now, just imagine it how you wish!</p>
+            <ul>
+                <li><b>Bestie Bond:</b> When standing directly next to someone with the same amount of HP as you, this sword's damage becomes 4d6+4.</li>
+            </ul>
+        </description>
+
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="slashing">2d6+3</set>
+            <set name="slot">onehand</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+            <set name="versatile">2d8+2</set>
+        </setters>
+    </element>
+    <element name="Unbreakable Katana" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_UNBREAKINGKATANA">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+        <description>
+            <p>This weapon is an unbreakable katana with a +4 attack bonus. It deals 1d8+4 slashing damage.</p>
+            <p>It can only be used in 3 clashes, and upon the third clash, it will break.</p>
+            <p>When an attacking spell is cast against you, you may attempt to attack it to deflect or destroy it, must hit DC. This ability can be used thrice per long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="slashing">1d8+4</set>
+        </setters>
+    </element>
+    <element name="Ahab's Crosshairs" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_AHABSCROSSHAIRS">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_RIFLES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS</supports>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="range">30/220</set>
+            <set name="damage" type="piercing">1d10+5</set>
+            <set name="reload">-</set>
+            <set name="proficiency">ID_RDDT_AA_PROFICIENCY_WEAPON_PROFICIENCY_RIFLES</set>
+        </setters>
+    </element>
+        <element name="Dragon Spine" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_DRAGONSPINE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>This longsword is made from the spine of a ruthless dragon, slain by the Corrupt Sorcerer of Runia.</p>
+            <p>Upon attuning you may pick a dragon type, based on that type of dragon you pick you are allowed to make a bonus action ‘Breath attack’ that will deal [4d4+4] thrice per short rest.</p>
+            <p><b>ADD BREATH TYPE TO THE NOTES OF THIS ITEM.</b></p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="slashing">2d8+2</set>
+            <set name="slot">onehand</set>
+            <set name="versatile">2d10+2</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="strength" value="2" />
+            <stat name="intimidation:misc" value="2" />
+        </rules>
+    </element>
+</elements>
