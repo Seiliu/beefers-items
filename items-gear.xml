@@ -4,11 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-<<<<<<< HEAD
-		<update version="0.0.2">
-=======
 		<update version="0.0.3">
->>>>>>> fbe5e28 (test)
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -23,13 +19,8 @@
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
-<<<<<<< HEAD
-            <set name="cost" currency="gp">N/A</set>
-            <set name="weight" lb="0">N/A lb.</set>
-=======
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
->>>>>>> fbe5e28 (test)
         </setters>
         <sheet>
             <description>
@@ -50,13 +41,8 @@
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
-<<<<<<< HEAD
-            <set name="cost" currency="gp">N/A</set>
-            <set name="weight" lb="0">N/A lb.</set>
-=======
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
->>>>>>> fbe5e28 (test)
         </setters>
         <sheet>
             <description>
@@ -73,13 +59,8 @@
             <set name="category">Rings</set>
             <set name="type">Ring</set>
 			<set name="slot">ring</set>
-<<<<<<< HEAD
-            <set name="cost" currency="gp">N/A</set>
-            <set name="weight" lb="0">N/A lb.</set>
-=======
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
->>>>>>> fbe5e28 (test)
         </setters>
     </element>
     <element name="Spine of Time" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_TIMESPINE">
@@ -95,19 +76,11 @@
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
-<<<<<<< HEAD
-            <set name="cost" currency="gp">N/A</set>
-            <set name="weight" lb="0">N/A lb.</set>
-        </setters>
-        <rules>
-            <stat name="hp" value="-2" />
-=======
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
         </setters>
         <rules>
             <stat name="hp" value="-5" />
->>>>>>> fbe5e28 (test)
         </rules>
     </element>
 </elements>
