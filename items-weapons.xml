@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="">Seiliu</author>
 		<update version="0.0.6">
-			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefersitems/main/items-weapons.xml" />
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-weapons.xml" />
 		</update>
 	</info>
     <element name="Caledfwlch" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_CALEDFWLCH">
