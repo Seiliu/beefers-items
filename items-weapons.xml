@@ -18,7 +18,7 @@
             </ul>
         </description>
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="damage" type="slashing">2d6+3</set>
             <set name="type">Weapon</set>
             <set name="slot">twohand</set>
