@@ -30,7 +30,7 @@
             <p>This weapon is a mere ordinary spear with a silvery tint.</p>
         </description>
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="damage" type="piercing">1d10+1</set>
             <set name="slot">onehand</set>
             <set name="versatile">1d12+1</set>
@@ -52,7 +52,7 @@
             </ul>
         </description>
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="damage" type="piercing">3d4+3</set>
             <set name="slot">onehand</set>
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</set>
@@ -69,7 +69,7 @@
         </description>
 
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="damage" type="slashing">2d6+3</set>
             <set name="slot">onehand</set>
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
@@ -84,7 +84,7 @@
             <p>When an attacking spell is cast against you, you may attempt to attack it to deflect or destroy it, must hit DC. This ability can be used thrice per long rest.</p>
         </description>
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="damage" type="slashing">1d8+4</set>
             <set name="slot">twohand</set>
         </setters>
@@ -92,7 +92,7 @@
     <element name="Ahab's Crosshairs" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_AHABSCROSSHAIRS">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED,ID_INTERNAL_DAMAGETYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION,ID_INTERNAL_WEAPON_PROPERTY_RELOAD,ID_RDDT_AA_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_RDDT_AA_WEAPON_GROUP_RIFLES, ID_RDDT_AA_WEAPON_GROUP_FIREARMS</supports>
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="slot">twohand</set>
             <set name="range">30/220</set>
             <set name="damage" type="piercing">1d10+5</set>
@@ -108,7 +108,7 @@
             <p><b>ADD BREATH TYPE TO THE NOTES OF THIS ITEM.</b></p>
         </description>
         <setters>
-            <set name="category">Beefer's Weapons</set>
+            <set name="category">Weapons</set>
             <set name="damage" type="slashing">2d8+2</set>
             <set name="slot">onehand</set>
             <set name="versatile">2d10+2</set>
