@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.4">
+		<update version="0.0.6">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
             </ul>
         </description>
         <setters>
-            <set name="category">Wondrous Items</set>
+            <set name="category">Beefer's Items</set>
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
             <set name="slot">mount</set>
@@ -41,7 +41,7 @@
             </ul>
         </description>
         <setters>
-            <set name="category">Wondrous Items</set>
+            <set name="category">Beefer's Items</set>
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
         </setters>
@@ -57,7 +57,7 @@
             <p>This ability can only be used twice per combat.</p>
         </description>
         <setters>
-            <set name="category">Rings</set>
+            <set name="category">Beefer's Items</set>
             <set name="type">Ring</set>
 			<set name="slot">ring</set>
             <set name="cost" currency="-">-</set>
@@ -76,7 +76,7 @@
             </ul>
         </description>
         <setters>
-            <set name="category">Wondrous Items</set>
+            <set name="category">Beefer's Items</set>
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
             <set name="slot">misc</set>
@@ -93,7 +93,7 @@
             </ul>
         </description>
         <setters>
-            <set name="category">Wondrous Items</set>
+            <set name="category">Beefer's Items</set>
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
             <set name="slot">head</set>
