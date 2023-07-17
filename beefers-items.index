@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="">Seiliu</author>
 		<update version="0.0.2">
-			<file name="beefers-items.index" url="" />
+			<file name="beefers-items.index" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/beefers-items.index" />
 		</update>
 	</info>
 	<files>
