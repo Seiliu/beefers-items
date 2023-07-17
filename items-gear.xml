@@ -78,9 +78,25 @@
             <set name="category">Wondrous Items</set>
             <set name="cost" currency="-">-</set>
             <set name="weight" lb="-">-</set>
+            <set name="slot">misc</set>
         </setters>
         <rules>
             <stat name="hp" value="-5" />
         </rules>
     </element>
+    <element name="Top Hat of Gien" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_GIENTOPHAT">
+        <description>
+            <ul>
+            <li><p><i>Gifted Speech-</i> While attuned to this item, you have +3 Charisma.</p></li>
+            <li><p><i>Mercie's Gift-</i> You may use a reaction to heal an ally within 15 feet of yourself for [2d6+level]</p></li>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="-">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">head</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="3" />
+        </rules>
 </elements>
