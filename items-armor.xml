@@ -4,11 +4,11 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
 		</update>
 	</info>
-    <element name="Shaman's outfit" type="Armor" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SHAMANSOUTFIT">
+    <element name="Shaman's outfit" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SHAMANSOUTFIT">
         <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
         <description>
             <p>The outfit of a Shaman, imbued with magical power, it empowers spellcasters and non-spellcasters alike, though in different ways:</p>
@@ -24,6 +24,7 @@
 			<set name="cost" currency="gp">-</set>
 			<set name="weight" lb="-">-</set>
 			<set name="slot">body</set>
+            <set name="type">Armor</set>
 			<set name="armor">Light</set>
 			<set name="armorClass">Natural AC + 3</set>
             <set name="attunement" requirements="!ID_WOTC_PHB_CLASS_WARLOCK,!ID_WOTC_PHB_CLASS_SORCERER,!ID_WOTC_PHB_CLASS_DRUID,!ID_WOTC_PHB_CLASS_CLERIC,!ID_WOTC_PHB_CLASS_WIZARD">true</set>
@@ -35,7 +36,7 @@
 			<stat name="spellcasting:attack" value="5" />
         </rules>
     </element>
-    <element name="Armor of the Scourge" type="Armor" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SCOURGEARMOR">
+    <element name="Armor of the Scourge" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SCOURGEARMOR">
         <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
         <description>
             <p>Description soon to be determined by beefer. For now, just imagine it how you wish!</p>
@@ -50,6 +51,7 @@
 			<set name="weight" lb="-">-</set>
 			<set name="slot">body</set>
 			<set name="armor">Medium</set>
+             <set name="type">Armor</set>
 			<set name="armorClass">15 + Strength modifier</set>
             <set name="attunement">false</set>
         </setters>
@@ -62,7 +64,7 @@
             <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" />
         </rules>
     </element>
-    <element name="Deorus's Skull" type="Armor" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_SHIELD_DEORUSSKULL">
+    <element name="Deorus's Skull" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_SHIELD_DEORUSSKULL">
 		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
 		<description>
 			<p>The skull of a powerful creature. It is nearly indestructible.</p>
@@ -75,6 +77,7 @@
 			<set name="type">Shield</set>
 			<set name="armor">Shield</set>
 			<set name="armorClass">+3</set>
+             <set name="type">Armor</set>
 			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
 		</setters>
 		<rules>
