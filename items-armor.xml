@@ -20,7 +20,7 @@
             </ul>
         </description>
         <setters>
-			<set name="category">Armor</set>
+			<set name="category">Beefer's Armors</set>
 			<set name="cost" currency="gp">-</set>
 			<set name="weight" lb="-">-</set>
 			<set name="slot">body</set>
@@ -46,7 +46,7 @@
             </ul>
         </description>
         <setters>
-			<set name="category">Armor</set>
+			<set name="category">Beefer's Armors</set>
 			<set name="cost" currency="gp">-</set>
 			<set name="weight" lb="-">-</set>
 			<set name="slot">body</set>
@@ -70,7 +70,7 @@
 			<p>The skull of a powerful creature. It is nearly indestructible.</p>
 		</description>
 		<setters>
-			<set name="category">Armor</set>
+			<set name="category">Beefer's Armors</set>
 			<set name="cost" currency="-">-</set>
 			<set name="weight" lb="-">-</set>
 			<set name="slot">onehand,secondary</set>
