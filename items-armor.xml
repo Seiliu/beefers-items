@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
 		</update>
 	</info>
