@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
 		</update>
 	</info>
@@ -62,4 +62,23 @@
             <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" />
         </rules>
     </element>
+    <element name="Deorus's Skull" type="Armor" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_SHIELD_DEORUSSKULL">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>The skull of a powerful creature. It is nearly indestructible.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="-">-</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+3</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="3" bonus="shield" />
+		</rules>
+	</element>
 </elements>
