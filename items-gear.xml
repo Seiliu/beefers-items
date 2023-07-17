@@ -87,8 +87,9 @@
     <element name="Top Hat of Gien" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_GIENTOPHAT">
         <description>
             <ul>
-            <li><p><i>Gifted Speech-</i> While attuned to this item, you have +3 Charisma.</p></li>
-            <li><p><i>Mercie's Gift-</i> You may use a reaction to heal an ally within 15 feet of yourself for [2d6+level]</p></li>
+                <li><p><i>Gifted Speech-</i> While attuned to this item, you have +3 Charisma.</p></li>
+                <li><p><i>Mercie's Gift-</i> You may use a reaction to heal an ally within 15 feet of yourself for [2d6+level]</p></li>
+            </ul>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
