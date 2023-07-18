@@ -102,7 +102,7 @@
             <stat name="charisma" value="3" />
         </rules>
     </element>
-    <element name="Top Hat of Gien" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_GIENTOPHAT">
+    <element name="Six Eyes" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_SIXEYES">
         <description>
         <p>Upon entering combat with an enemy, you may learn <b>1d2</b> of its abilities.</p>
         <p>You have advantage on martial checks.</p>
