@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/custom-features.xml" />
 		</update>
 	</info>
@@ -21,7 +21,7 @@
         <description>
             <p>You may use a reaction to heal an ally within 15 feet of yourself for [2d6+level]</p>
         </description>
-        <sheet action="Reaction" usage="1/Short Rest">
+        <sheet action="Action" usage="1/Long Rest">
             <description>Heal an ally within 15 feet of yourself for 2d6+{{level}} hp.</description>
         </sheet>
     </element>
@@ -29,7 +29,7 @@
         <description>
             <p>Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</p>
         </description>
-        <sheet action="Reaction" usage="1/Short Rest">
+        <sheet action="Action" usage="No Cooldown?">
             <description>Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</description>
         </sheet>
     </element>
