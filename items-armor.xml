@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
 		</update>
 	</info>
@@ -82,6 +82,28 @@
 		</setters>
 		<rules>
 			<stat name="ac:shield" value="3" bonus="shield" />
+		</rules>
+	</element>
+        <element name="Shield of a Tortle Warrior" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_SHIELD_TORTLESHIELD">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>This shield grants +6 AC to any who wield this shield. However, it can be placed on the back to grant +3 AC instead and allow the owner to take the <i>Defend</i> action, gaining +8 AC for a turn.</p>
+            <p class="indent"><strong><em>Finally Aflame.</em></strong> Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</p>
+		</description>
+		<setters>
+			<set name="category">Beefer's Armors</set>
+			<set name="cost" currency="-">-</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+6,+3</set>
+             <set name="type">Armor</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="6" bonus="shield" />
+            <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_CLASS_FEATURE_TORTLESHIELD_FINALLYFLAME" />
 		</rules>
 	</element>
 </elements>

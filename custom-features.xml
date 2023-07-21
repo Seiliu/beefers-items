@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/custom-features.xml" />
 		</update>
 	</info>
@@ -21,11 +21,16 @@
         <description>
             <p>You may use a reaction to heal an ally within 15 feet of yourself for [2d6+level]</p>
         </description>
-        <setters>
-            <set name="type">Weapon Feature</set>
-        </setters>
         <sheet action="Reaction" usage="1/Short Rest">
             <description>Heal an ally within 15 feet of yourself for 2d6+{{level}} hp.</description>
+        </sheet>
+    </element>
+    <element name="Finally Aflame" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_CLASS_FEATURE_TORTLESHIELD_FINALLYFLAME">
+        <description>
+            <p>Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</description>
         </sheet>
     </element>
 </elements>
