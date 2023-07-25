@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
 		</update>
 	</info>
@@ -106,4 +106,25 @@
             <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_CLASS_FEATURE_TORTLESHIELD_FINALLYFLAME" />
 		</rules>
 	</element>
+	<element name="Haori of the Golden Warrior" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_GOLDENHAORI">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>A golden haori, once donned by a prideful warrior, who met his end at the hands of a fiercesome party of mercenaries.</p>
+			<p class="indent"><strong><em>Flash.</em></strong>When you take the Dash action, you can move 15 ft in one direction and deal [1d8+2] lightning damage to any enemies in your path. Thrice per long rest.</p>
+			<p class="indent"><strong><em>Sixfold.</em></strong> When charging through the use of <i>Flash</i>, you can change it's damage to [3d6+3]. Once per long rest.</p>
+			<p class="indent"><strong><em>Godspeed.</em></strong> Yet unknown.</p>
+        </description>
+        <setters>
+			<set name="category">Beefer's Armors</set>
+			<set name="cost" currency="gp">-</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">body</set>
+            <set name="type">Armor</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">14 + Dexterity</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="14" />
+        </rules>
+    </element>
 </elements>
