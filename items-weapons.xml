@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -125,7 +125,7 @@
             <stat name="intimidation:misc" value="2" />
         </rules>
     </element>
-    <element name="Dragon Spine" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_DRAGONSPINE">
+    <element name="Katana" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_KATANA">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p>In some cultures this strong, single-edged sword is a symbol of honor and prestige. The katana is intended for two-handed use, but it's light enough to be wielded one-handed.</p>
