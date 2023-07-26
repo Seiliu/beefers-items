@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.7">
+		<update version="0.0.9">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -124,5 +124,21 @@
             <stat name="strength" value="2" />
             <stat name="intimidation:misc" value="2" />
         </rules>
+    </element>
+    <element name="Dragon Spine" type="Weapon" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_DRAGONSPINE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>In some cultures this strong, single-edged sword is a symbol of honor and prestige. The katana is intended for two-handed use, but it's light enough to be wielded one-handed.</p>
+            <p class="indent"><strong><em>Finesse Variant.</em></strong> Historically, katanas widely varied in size and weight. If you would prefer a katana that emphasizes fast, precise cuts, replace the versatile property with the finesse property and reduce the weight to 2 lbs. </p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="versatile">1d10</set>
+            <set name="attunement">false</set>
+        </setters>
     </element>
 </elements>

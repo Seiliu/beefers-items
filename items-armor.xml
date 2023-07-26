@@ -110,7 +110,7 @@
         <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
         <description>
             <p>A golden haori, once donned by a prideful warrior, who met his end at the hands of a fiercesome party of mercenaries.</p>
-			<p class="indent"><strong><em>Flash.</em></strong>When you take the Dash action, you can move 15 ft in one direction and deal [1d8+2] lightning damage to any enemies in your path. Thrice per long rest.</p>
+			<p class="indent"><strong><em>Flash.</em></strong> When you take the Dash action, you can move 15 ft in one direction and deal [1d8+2] lightning damage to any enemies in your path. Thrice per long rest.</p>
 			<p class="indent"><strong><em>Sixfold.</em></strong> When charging through the use of <i>Flash</i>, you can change it's damage to [3d6+3]. Once per long rest.</p>
 			<p class="indent"><strong><em>Godspeed.</em></strong> Yet unknown.</p>
         </description>
