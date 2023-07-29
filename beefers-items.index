@@ -4,7 +4,7 @@
 		<name>Beefer's Items</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="beefers-items.index" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/beefers-items.index" />
 		</update>
 	</info>
@@ -13,6 +13,6 @@
 		<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-gear.xml" />
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
 		<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/custom-features.xml" />
-		<file name="feats.xml" url="https://raw.githubusercontnet.com/Seiliu/beefers-items/main/feats.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
 	</files>
 </index>
