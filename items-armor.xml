@@ -27,10 +27,10 @@
             <set name="type">Armor</set>
 			<set name="armor">Light</set>
 			<set name="armorClass">Natural AC + 3</set>
-            <set name="attunement" requirements="!ID_WOTC_PHB_CLASS_WARLOCK,!ID_WOTC_PHB_CLASS_SORCERER,!ID_WOTC_PHB_CLASS_DRUID,!ID_WOTC_PHB_CLASS_CLERIC,!ID_WOTC_PHB_CLASS_WIZARD">true</set>
+            <set name="attunement" requirements="![type:spell]">true</set>
         </setters>
         <rules>
-            <select type="Spell" name="Cantrip (Shaman's Outfit)" supports="0" number="3" spellcasting="Any" requirements="!ID_WOTC_PHB_CLASS_WARLOCK,!ID_WOTC_PHB_CLASS_SORCERER,!ID_WOTC_PHB_CLASS_DRUID,!ID_WOTC_PHB_CLASS_CLERIC,!ID_WOTC_PHB_CLASS_WIZARD"/>
+            <select type="Spell" name="Cantrip (Shaman's Outfit)" supports="0" number="3" spellcasting="Any" requirements="![type:spell]"/>
             <stat name="ac:armored:armor" value="10" />
             <stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
 			<stat name="spellcasting:attack" value="5" />

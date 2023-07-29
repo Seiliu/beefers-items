@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+     <info>
+		<name>Feats</name>
+		<description></description>
+		<author url="">Seiliu</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
+		</update>
+	</info>
+    <element name="Captain's Command" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_CAPTAINCOMMAND">
+        <prerequisite>Dexterity 13 or higher</prerequisite>
+        <requirements>[cha:13]</requirements>
+        <description>
+        	<p><i>Prerequisite: Charisma 13 or higher</i></p>
+            <p>As a charismatic and seasoned captain, your presence on the ship inspires respect and loyalty among your crew. You gain the following benefits:</p>
+            <ul>
+                <li><p class="indent"><strong><em>Friendly Aura.</em></strong> You have an aura of authority that extends to 30 feet. Allies within this radius gain advantage on saving throws against being frightened or charmed.</p></li>
+                <li><p class="indent"><strong><em>Rallying Shout.</em></strong> Once per long rest, you can use a bonus action to rally your crew. All friendly creatures within 60 feet gain temporary hit points equal to your Charisma modifier + your level.</p></li> 
+            </ul>
+        </description>
+</elements>
