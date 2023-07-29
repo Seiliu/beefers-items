@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
 		</update>
 	</info>
@@ -19,4 +19,5 @@
                 <li><p class="indent"><strong><em>Rallying Shout.</em></strong> Once per long rest, you can use a bonus action to rally your crew. All friendly creatures within 60 feet gain temporary hit points equal to your Charisma modifier + your level.</p></li> 
             </ul>
         </description>
+    </element>
 </elements>
