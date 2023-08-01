@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/custom-features.xml" />
 		</update>
 	</info>
@@ -41,11 +41,11 @@
     <element name="Rallying Shout" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_RALLYSHOUT">
         <sheet action="Bonus Action" usage="1/Long Rest">
             <description>You can use a bonus action to rally your crew. All friendly creatures within 60 feet gain temporary hit points equal to {{rallying shout:hp:temp}}</description>
-            <rules>
-                <stat name="rallying shout:hp:temp" value="level" />
-                <stat name="rallying shout:hp:temp" value="charisma:modifier" />
-            </rules>
         </sheet>
+        <rules>
+            <stat name="rallying shout:hp:temp" value="level" />
+            <stat name="rallying shout:hp:temp" value="charisma:modifier" />
+        </rules>
     </element>
     <element name="Healing Hands" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_HEALHANDS">
         <sheet action="Action" usage="1/Short Rest">
