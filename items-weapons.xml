@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -109,7 +109,7 @@
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p>This longsword is made from the spine of a ruthless dragon, slain by the Corrupt Sorcerer of Runia.</p>
-            <p>Upon attuning you may pick a dragon type, based on that type of dragon you pick you are allowed to make a bonus action ‘Breath attack’ that will deal [4d4+4] thrice per short rest.</p>
+            <p>Upon attuning you may pick a dragon type, based on that type of dragon you pick you are allowed to make an action ‘Breath attack’ that will deal [3d6] 3 times per short rest.</p>
             <p><b>ADD BREATH TYPE TO THE NOTES OF THIS ITEM.</b></p>
         </description>
         <setters>

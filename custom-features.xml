@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="custom-features.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/custom-features.xml" />
 		</update>
 	</info>
@@ -29,8 +29,42 @@
         <description>
             <p>Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</p>
         </description>
-        <sheet action="Action" usage="No Cooldown?">
+        <sheet action="Action" usage="???/???">
             <description>Set your shield on fire, whenever you are hit, the attacker makes a constitution save. If they fail, they take 2d6 damage.</description>
+        </sheet>
+    </element>
+    <element name="Friendly Aura" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_FRIENDLYAURA">
+        <sheet>
+            <description>You have an aura of authority that extends to 30 feet. Allies within this radius gain advantage on saving throws against being frightened or charmed.</description>
+        </sheet>
+    </element>
+    <element name="Rallying Shout" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_RALLYSHOUT">
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>You can use a bonus action to rally your crew. All friendly creatures within 60 feet gain temporary hit points equal to {{rallying shout:hp:temp}}</description>
+            <rules>
+                <stat name="rallying shout:hp:temp" value="level" />
+                <stat name="rallying shout:hp:temp" value="charisma:modifier" />
+            </rules>
+        </sheet>
+    </element>
+    <element name="Healing Hands" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_HEALHANDS">
+        <sheet action="Action" usage="1/Short Rest">
+            <description>You can use an action to magically heal a creature you touch. The target regains hit points equal to 1d8 + {{wisdom:modifier}}.</description>
+        </sheet>
+    </element>
+    <element name="Deadeye Focus" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_DEADEYEFOCUS">
+        <sheet action="Bonus Action" usage="1/1">
+            <description>Once per turn, you can choose to take a -5 penalty to your ranged weapon attack roll. If the attack hits, you add +10 to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Quick Charting" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_QUICKCHARTING">
+        <sheet action="Action" usage="1/Short Rest">
+            <description>In good weather conditions, you can rechart your ship's course in the blink of an eye. This allows your ship to reroll any failed navigational check during the journey.</description>
+        </sheet>
+    </element>
+    <element name="Riposte" type="Feat Feature" source="Hentaper's Content" id="ID_SEILIU_FEATFEATURE_RIPOSTE">
+        <sheet action="Reaction" usage="1/1">
+            <description>When a creature misses you with a melee attack, you can use your reaction to make a melee attack against that creature.</description>
         </sheet>
     </element>
 </elements>

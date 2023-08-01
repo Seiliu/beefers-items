@@ -4,20 +4,77 @@
 		<name>Feats</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
 		</update>
 	</info>
     <element name="Captain's Command" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_CAPTAINCOMMAND">
-        <prerequisite>Dexterity 13 or higher</prerequisite>
+        <prerequisite>Charisma 13 or higher</prerequisite>
         <requirements>[cha:13]</requirements>
         <description>
         	<p><i>Prerequisite: Charisma 13 or higher</i></p>
             <p>As a charismatic and seasoned captain, your presence on the ship inspires respect and loyalty among your crew. You gain the following benefits:</p>
-            <ul>
-                <li><p class="indent"><strong><em>Friendly Aura.</em></strong> You have an aura of authority that extends to 30 feet. Allies within this radius gain advantage on saving throws against being frightened or charmed.</p></li>
-                <li><p class="indent"><strong><em>Rallying Shout.</em></strong> Once per long rest, you can use a bonus action to rally your crew. All friendly creatures within 60 feet gain temporary hit points equal to your Charisma modifier + your level.</p></li> 
-            </ul>
+            <p class="indent"><strong><em>Friendly Aura.</em></strong> You have an aura of authority that extends to 30 feet. Allies within this radius gain advantage on saving throws against being frightened or charmed.</p>
+            <p class="indent"><strong><em>Rallying Shout.</em></strong> Once per long rest, you can use a bonus action to rally your crew. All friendly creatures within 60 feet gain temporary hit points equal to your Charisma modifier + your level.</p>
         </description>
+        <rules>
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_FRIENDLYAURA" />
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_RALLYSHOUT" />
+        </rules>
+    </element>
+    <element name="Healing Touch" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_HEALINGTOUCH">
+        <prerequisite>Wisdom 13 or higher</prerequisite>
+        <requirements>[wis:13]</requirements>
+        <description>
+        	<p><i>Prerequisite: Wisdom 13 or higher</i></p>
+            <p>Your expertise in medicine and healing magic makes you an invaluable doctor on board. You gain the following benefits:</p>
+            <p class="indent"><strong><em>Medical Knowledge.</em></strong> You gain proficiency in the Medicine skill, and if you are already proficient, you add double your proficiency bonus to checks made with this skill.</p>
+            <p class="indent"><strong><em>Healing Hands.</em></strong> Once per short rest, you can use an action to magically heal a creature you touch. The target regains hit points equal to 1d8 + your Wisdom modifier.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_HEALHANDS" />
+        </rules>
+    </element>
+    <element name="Marksman's Precision" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_MARKSMANSPRECISION">
+        <prerequisite>Dexterity 13 or higher</prerequisite>
+        <requirements>[dex:13]</requirements>
+        <description>
+        	<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+            <p>Your skill with ranged weapons is unmatched, allowing you to strike true from a distance. You gain the following benefits:</p>
+            <p class="indent"><strong><em>Sharpshooter.</em></strong> You gain a +1 bonus to attack rolls and damage rolls with ranged weapons.</p>
+            <p class="indent"><strong><em>Deadeye Focus.</em></strong> Once per turn, you can choose to take a -5 penalty to your ranged weapon attack roll. If the attack hits, you add +10 to the damage dealt.</p>
+        </description>
+        <rules>
+            <stat name="ranged:attack" value="1" />
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_DEADEYEFOCUS" />
+        </rules>
+    </element>
+    <element name="Navigator's Instinct" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_NAVINSTINCT">
+        <prerequisite>Intelligence 13 or higher</prerequisite>
+        <requirements>[int:13]</requirements>
+        <description>
+        	<p><i>Prerequisite: Intelligence 13 or higher</i></p>
+            <p>You have an innate ability to navigate the treacherous seas with ease. You gain the following benefits:</p>
+            <p class="indent"><strong><em>Sea Sense.</em></strong> You have advantage on all Intelligence (Navigation) checks and Wisdom (Perception) checks related to ship navigation.</p>
+            <p class="indent"><strong><em>Quick Charting.</em></strong> Once per short rest, in good weather conditions, you can rechart your ship's course in the blink of an eye. This allows your ship to reroll any failed navigational check during the journey.</p>
+        </description>
+        <rules>
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_QUICKCHARTING" />
+        </rules>
+    </element>
+    <element name="Swordsmanship Mastery" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_SWORDMASTERY">
+        <prerequisite>Dexterity 13 or higher</prerequisite>
+        <requirements>[dex:13]</requirements>
+        <description>
+        	<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+            <p>You have honed your swordsmanship to perfection, becoming a formidable duelist. You gain the following benefits:</p>
+            <p class="indent"><strong><em>Fencing Specialist.</em></strong> You gain a +1 bonus to attack rolls and damage rolls when wielding a one-handed melee weapon.</p>
+            <p class="indent"><strong><em>Riposte.</em></strong> When a creature misses you with a melee attack, you can use your reaction to make a melee attack against that creature.</p>
+        </description>
+        <rules>
+            <stat name="melee:attack" value="1" />
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_RIPOSTE" />
+        </rules>
     </element>
 </elements>
