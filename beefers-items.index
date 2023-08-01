@@ -4,7 +4,7 @@
 		<name>Beefer's Items</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="beefers-items.index" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/beefers-items.index" />
 		</update>
 	</info>
