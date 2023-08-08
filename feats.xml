@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
 		</update>
 	</info>
@@ -75,6 +75,41 @@
         <rules>
             <stat name="melee:attack" value="1" />
             <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_RIPOSTE" />
+        </rules>
+    </element>
+     <element name="UnLuck" type="Feat" source="Beefer's Items" id="ID_SEILIU_FEAT_UNLUCK">
+        <prerequisite>No Requirements</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p>Those who cross you find themselves quite <i>unlucky.</i></p>
+            <p>Whenever someone makes contact with you, activate a 2 turn timer. Depending on how much damage they dealt to any creature during this time, you call upon your unlucky powers and double the damage dealt. (thrice per long rest)</p>
+            <p><b>Cost: 450 gp</b></p>
+        </description>
+    </element>
+    <element name="UnDead" type="Feat" source="Beefer's Items" id="ID_SEILIU_FEAT_UNDEAD">
+        <prerequisite>No Requirements</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p>The price of immortality is your mind.</p>
+            <p>Remove the concept of ‘Death’ From your soul. When you ‘die’ you cannot act for one turn. Afterwards, you have disadvantage on all wisdom saving throws. If you die enough in battle you obtain exhaustion.</p>
+            <p><b>Cost: 650 gp</b></p>
+        </description>
+    </element>
+    <element name="Unavoidable" type="Feat Feature" source="Beefer's Items" id="ID_SEILIU_FEATFEATURE_UNAVOIDABLE">
+        <sheet action="Reaction" usage="2/Long Rest">
+            <description>Decrease a target's AC by 10.</description>
+        </sheet>
+    </element>
+    <element name="UnAvoidable" type="Feat" source="Beefer's Items" id="ID_SEILIU_FEAT_UNAVOIDABLE">
+        <prerequisite>No Requirements</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p>Your punishment is inevitable.</p>
+            <p>As a reaction, decrease a target's AC by 10 (twice per long rest.)</p>
+            <p><b>Cost: 350 gp</b></p>
+        </description>
+        <rules>
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_UNAVOIDABLE" />
         </rules>
     </element>
 </elements>
