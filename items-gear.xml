@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.2">
+		<update version="0.1.1">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -238,6 +238,8 @@
             <stat name="charisma" value="2" />
             <stat name="spellcasting:attack" value="5" />
             <grant type="Class Feature" id="ID_SEILIU_ITEMFEATURE_DONQUIXOTE_DB" />
+            <grant type="Class Feature" id="ID_SEILIU_ITEMFEATURE_DONQUIXOTE_SS" />
+            <grant type="Class Feature" id="ID_SEILIU_ITEMFEATURE_DONQUIXOTE_RD" />
         </rules>
     </element>
 </elements>
