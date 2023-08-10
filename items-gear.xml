@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -223,7 +223,7 @@
             <ul>
                 <li><p class="indent"><strong><em>Devouring Beasts.</em></strong> Summon two giant mouths; the targeted enemy must roll a dexterity saving throw; on a failed save, they take [2d10+5] piercing damage. Alternatively, you may have these beasts devour an ally and heal them for [2d5+5] hit points.</p></li>
                 <li><p class="indent"><strong><em>Sallie's Stampede.</em></strong> A horde of vicious, snarling horses fly out of the tome, trampling anyone or anything in front of you; if in range, a dexterity save is required. Upon failure, they take [8d4] bludgeoning damage and an ally may move 20 feet.</p></li>
-                <li><p class="indent"><strong><em>Respectful Duel.</em></strong> Force an enemy or an ally to only attack a target that you specify. This will only apply if the afflicted fails a charisma saving throw of 10 + charisma modifier.</p>
+                <li><p class="indent"><strong><em>Respectful Duel.</em></strong> Force an enemy or an ally to only attack a target that you specify. This will only apply if the afflicted fails a charisma saving throw of 10 + charisma modifier.</p></li>
             </ul>
         </description>
         <setters>
