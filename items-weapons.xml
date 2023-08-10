@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -139,6 +139,35 @@
             <set name="slot">onehand</set>
             <set name="versatile">1d10</set>
             <set name="attunement">false</set>
+        </setters>
+    </element>
+    <element name="Shadow Shotgun" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_SHADOWSHOTGUN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>A shotgun whose barrel seems to always be casted in shadow.</p>
+            <p>On attack, the user and the victim must make dexterity saving throws. Success for the user will allow them to hold their footing and not move. Success for the targeted will halve damage.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="piercing">7d3+3</set>
+            <set name="slot">twohand</set>
+            <set name="range">5/15</set>
+            <set name="type">Weapon</set>
+        </setters>
+    </element>
+        <element name="Anti-matter Pistol" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_AMPISTOL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+        <description>
+            <p>A handheld pistol that draws energy from antimatter around us.</p>
+            <p>When rolling damage, if the dice roll is max, gain +5 temporary hit points.</p>
+            <p>Though it is not an inherent property of this weapon, it can be wielded with two hands to increase the range to 30/60.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="piercing">1d6+4</set>
+            <set name="slot">onehand</set>
+            <set name="range">15/30</set>
+            <set name="type">Weapon</set>
         </setters>
     </element>
 </elements>
