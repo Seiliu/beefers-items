@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.4">
+		<update version="0.0.6">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
 		</update>
 	</info>
@@ -90,7 +90,7 @@
         <prerequisite>No Requirements</prerequisite>
         <requirements></requirements>
         <description>
-            <p>The price of immortality is your mind.</p>
+            <p>Mind is the price for eternal life.</p>
             <p>Remove the concept of ‘Death’ From your soul. When you ‘die’ you cannot act for one turn. Afterwards, you have disadvantage on all wisdom saving throws. If you die enough in battle you obtain exhaustion.</p>
             <p><b>Cost: 650 gp</b></p>
         </description>
@@ -110,6 +110,54 @@
         </description>
         <rules>
             <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_UNAVOIDABLE" />
+        </rules>
+    </element>
+    <element name="UnTruth" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_FEATFEATURE_UNTRUTH">
+        <sheet usage="3/Short Rest" action="reaction">
+            <description>As a reaction, grant disadvantage to a target and remove their attack bonus. If they can defend themself, you may instead use your reaction to decrease their AC by 5. You may grant disadvantage to any member of a clash while observing it.</description>
+        </sheet>
+    </element>
+    <element name="UnTruth" type="Feat" source="Beefer's Items" id="ID_SEILIU_FEAT_UNTRUTH">
+        <prerequisite>No Requirements</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p>As a reaction, grant disadvantage to a target and remove their attack bonus. If they can defend themself, you may instead use your reaction to decrease their AC by 5. You may grant disadvantage to any member of a clash while observing it.</p>
+            <p><b>Cost: 200 gp</b></p>
+        </description>
+        <rules>
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_UNTRUTH" />
+        </rules>
+    </element>
+    <element name="UnDraw" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_FEATFEATURE_UNDRAW">
+        <sheet usage="2/Long Rest" action="reaction">
+            <description>As a reaction, if an ally has used their martial check to learn the enemy's plan, you may active Negation, stopping the enemy from using any special abilities for one turn. Also, if an enemy rolls poorly on the first roll of a clash, they will automatically fail.</description>
+        </sheet>
+    </element>
+    <element name="UnDraw" type="Feat" source="Beefer's Items" id="ID_SEILIU_FEAT_UNDRAW">
+        <prerequisite>No Requirements</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p>As a reaction, if an ally has used their martial check to learn the enemy's plan, you may active Negation, stopping the enemy from using any special abilities for one turn. Also, if an enemy rolls poorly on the first roll of a clash, they will automatically fail.</p>
+            <p><b>Cost: 250 gp</b></p>
+        </description>
+        <rules>
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_UNDRAW" />
+        </rules>
+    </element>
+    <element name="UnFair" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_FEATFEATURE_UNFAIR">
+        <sheet usage="2/Long Rest" action="action">
+            <description>As an action, roll a die to call upon any Negator ability. It lasts until the end of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="UnFair" type="Feat" source="Beefer's Items" id="ID_SEILIU_FEAT_UNFAIR">
+        <prerequisite>No Requirements</prerequisite>
+        <requirements></requirements>
+        <description>
+            <p>As an action, roll a die to call upon any Negator ability. It lasts until the end of your next turn.</p>
+            <p><b>Cost: 1000 gp</b></p>
+        </description>
+        <rules>
+            <grant type="Feat Feature" id="ID_SEILIU_FEATFEATURE_UNFAIR" />
         </rules>
     </element>
 </elements>
