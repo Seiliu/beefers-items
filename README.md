@@ -1,5 +1,5 @@
-# beefers-items
-A collection of items, armors, and weapons for D&D, all made for a certain dungeon master's campaign. 
+# Seiliu's Items
+A collection of items, armors, and weapons for D&D, all made for campaigns that I choose to help with.
 To add to your Aurora:
 1) Go to the page for the .index file.
 2) Press the "Raw" button in the top right corner.
