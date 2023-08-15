@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="">Seiliu</author>
 		<update version="0.0.6">
-			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/feats.xml" />
+			<file name="feats.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/feats.xml" />
 		</update>
 	</info>
     <element name="Captain's Command" type="Feat" source="Hentaper's Content" id="ID_SEILIU_FEAT_CAPTAINCOMMAND">
