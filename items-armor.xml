@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="">Seiliu</author>
 		<update version="0.0.8">
-			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/beefers-items/main/items-armor.xml" />
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-armor.xml" />
 		</update>
 	</info>
     <element name="Shaman's outfit" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_SHAMANSOUTFIT">
