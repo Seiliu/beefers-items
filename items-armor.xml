@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-armor.xml" />
 		</update>
 	</info>
@@ -125,6 +125,89 @@
         </setters>
         <rules>
             <stat name="ac:armored:armor" value="14" />
+        </rules>
+    </element>
+	<element name="Arata-proto" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_ARATAPROTO">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>This armor, a dapper suit, halves all incoming damage. If you take more damage than your hp, the suit starts to consume you. Deal [2d8] at the end of your next two turns.</p>
+        </description>
+        <setters>
+			<set name="category">Beefer's Armors</set>
+			<set name="cost" currency="gp">-</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">body</set>
+            <set name="type">Armor</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">16 + Strengh</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="16" bonus="base" />
+			<stat name="ac:armored:misc" value="-dexterity:modifier" />
+			<stat name="ac:armored:enhancement" value="strength:modifier" bonus="enhancement" />
+        </rules>
+    </element>
+	<element name="7:3 Ratio" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_BUSINESSCURSE_73RATIO">
+        <sheet>
+            <description>When attacking, you can use a bonus action to make your critical hit range 16-20. For that attack, you have an automatic critical hit, and it may cripple an enemy if they are low hp. You cannot use any bonus actions so long as this is active.</description>
+        </sheet>
+    </element>
+    <element name="Overtime" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_BUSINESSCURSE_OVERTIME">
+        <sheet>
+            <description>When you have five or more successful Ratios (hit your Quota) you're able to enter Overtime. Overtime lasts for 1 minute, and it activates the ‘Black Flash’ effect for everyone on the field; it also grants you advantage for every attack you make. When you’ve hit your Quota, fortify your body and activate a double edged sword you have up your sleeve.</description>
+        </sheet>
+    </element>
+    <element name="Ratio Curse" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_BUSINESSCURSE_RATIOCURSE">
+        <sheet>
+            <description>After Overtime ends, you have disadvantage on attacks, and enemies have advantage on attacks against you for 30 seconds.</description>
+        </sheet>
+    </element>
+	<element name="Cursed Business Suit" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_BUSINESSCURSE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p class="indent"><strong><em>7:3 Ratio.</em></strong> When attacking, you can use a bonus action to make your critical hit range 16-20. For that attack, you have an automatic critical hit, and it may cripple an enemy if they are low hp. You cannot use any bonus actions so long as this is active.</p>
+			<p class="indent"><strong><em>Overtime.</em></strong> When you have five or more successful Ratios (hit your Quota) you're able to enter Overtime. Overtime lasts for 1 minute, and it activates the ‘Black Flash’ effect for everyone on the field; it also grants you advantage for every attack you make. When you’ve hit your Quota, fortify your body and activate a double edged sword you have up your sleeve. </p>
+			<p class="indent"><strong><em>Ratio Curse.</em></strong> After Overtime ends, you have disadvantage on attacks, and enemies have advantage on attacks against you for 30 seconds.</p>
+        </description>
+        <setters>
+			<set name="category">Beefer's Armors</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">body</set>
+            <set name="type">Armor</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">10 + Strengh</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="10" bonus="base" />
+			<stat name="ac:armored:misc" value="-dexterity:modifier" />
+			<stat name="ac:armored:enhancement" value="strength:modifier" bonus="enhancement" />
+			<grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_BUSINESSCURSE_73RATIO" />
+			<grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_BUSINESSCURSE_OVERTIME" />
+			<grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_BUSINESSCURSE_RATIOCURSE" />
+        </rules>
+    </element>
+	<element name="Electric Surge" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_ARATAJOKER_ELECTRICSURGE">
+        <sheet action="Bonus Action" usage="2/Long Rest">
+            <description>The suit surges with electricity, granting you the effects of ‘Haste’ for 12 seconds. If your target has disadvantage, your attacks will automatically crit.</description>
+        </sheet>
+    </element>
+	<element name="Arata-joker" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ARMOR_ARATAJOKER">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>This armor is a complete version of the Arata. As a bonus action the suit surges with electricity, granting you the effects of ‘Haste’ for 12 seconds. If your target has disadvantage, your attacks will automatically crit. (Twice per long rest)</p>
+        </description>
+        <setters>
+			<set name="category">Beefer's Armors</set>
+			<set name="weight" lb="-">-</set>
+			<set name="slot">body</set>
+            <set name="type">Armor</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dexterity</set>
+        </setters>
+        <rules>
+			<grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ARMOR_ARATAJOKER_ELECTRICSURGE" />
+            <stat name="ac:armored:armor" value="12" bonus="base" />
         </rules>
     </element>
 </elements>

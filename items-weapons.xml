@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -105,7 +105,7 @@
             <set name="type">Weapon</set>
         </setters>
     </element>
-        <element name="Dragon Spine" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_DRAGONSPINE">
+    <element name="Dragon Spine" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_DRAGONSPINE">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p>This longsword is made from the spine of a ruthless dragon, slain by the Corrupt Sorcerer of Runia.</p>
@@ -169,5 +169,76 @@
             <set name="range">15/30</set>
             <set name="type">Weapon</set>
         </setters>
+    </element>
+    <element name="Zuishin Tekkan Rod - Staff" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_ZUISHINTEKKANROD_STAFF">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description>
+            <p>The Zuishin Tekkan is a staff that has multiple ‘forms.’ Each form does a different amount of damage and it requires a bonus action to switch forms, but you attack at disadvantage on that turn. The staff is 5 feet tall, and is thick enough to hold one person's weight. Switching modes shrinks it to a preferable size. Its forms are staff mode, nunchaku mode, and three-section-staff mode.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="bludgeoning">1d12+6</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="slot">onehand</set>
+            <set name="versatile">1d14+6</set>
+            <set name="attunement">false</set>
+            <set name="type">Weapon</set>
+        </setters>
+    </element>
+    <element name="Zuishin Tekkan Rod - Nunchaku" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_ZUISHINTEKKANROD_NUNCHAKU">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description>
+            <p>The Zuishin Tekkan is a staff that has multiple ‘forms.’ Each form does a different amount of damage and it requires a bonus action to switch forms, but you attack at disadvantage on that turn. The staff is 5 feet tall, and is thick enough to hold one person's weight. Switching modes shrinks it to a preferable size. Its forms are staff mode, nunchaku mode, and three-section-staff mode.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="bludgeoning">2d6+6</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">false</set>
+            <set name="type">Weapon</set>
+        </setters>
+    </element>
+    <element name="Zuishin Tekkan Rod - Three-Section-Staff" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_ZUISHINTEKKANROD_THREESECTIONSTAFF">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+        <description>
+            <p>The Zuishin Tekkan is a staff that has multiple ‘forms.’ Each form does a different amount of damage and it requires a bonus action to switch forms, but you attack at disadvantage on that turn. The staff is 5 feet tall, and is thick enough to hold one person's weight. Switching modes shrinks it to a preferable size. Its forms are staff mode, nunchaku mode, and three-section-staff mode.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="bludgeoning">3d4+4</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">false</set>
+            <set name="type">Weapon</set>
+        </setters>
+    </element>
+    <element name="Wind Slash" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS_WINDSLASH">
+        <sheet action="Bonus Action">
+            <description>When you’re in the air, you can kick into the air and send down a wind slash as sharp as a high end blade, this deals [1d8+{{dexterity:modifier}}] slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Wind Barrage" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS_WINDBARRAGE">
+        <sheet action="Action">
+            <description>When you’re in the air, use your action to send down a barrage of wind slashes that deal [3d8+{{dexterity:modifier}}] slashing damage.</description>
+        </sheet>
+    </element>
+    <element name="Blade Runners" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+        <description>
+            <p>A pair of silver and golden legs that look to be from a medieval armor set. They can be worn as greaves or replace ones legs. Attuning to this item grants 30 feet of flight, and as a bonus action when you’re in the air, you can kick into the air and send down a wind slash which is as sharp as a high end blade, this deals [1d8+dex] slashing damage. Or use your action to send down a barrage of these wind slashes that deal [3d8+dex] slashing damage. This ability can be used in a clash, and a successful roll is a crit.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="slashing">1d8 + Dexterity</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="type">Weapon</set>
+        </setters>
+        <rules>
+        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS_WINDSLASH" />
+        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS_WINDBARRAGE" />
+        </rules>
     </element>
 </elements>
