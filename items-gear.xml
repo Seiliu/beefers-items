@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -293,6 +293,24 @@
         <rules>
             <stat name="ac:misc" value="2" />
             <stat name="wisdom" value="3" />
+        </rules>
+    </element>
+    <element name="Drive Case" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE">
+        <description>
+            <p>(CONSTRUCT ONLY) You wield a large metallic case that is about 3/4 your size; it holds your body transformations and can be upgraded.</p>
+            <p class="indent"><strong><em>Silver.</em></strong> The case shifts around into a longsword of sorts. It deals 2d10 damage. The sword can emit certain energies, allowing to deal damage of any type.</p>
+            <p class="indent"><strong><em>Chariot.</em></strong> The case shifts into a motorbike. You may seat yourself in it using an action, and your movement speed becomes 200 ft. In the unlikely chance that you run over a creature, they must make <b>either</b> a dexterity or strength saving throw. If they fail, they are knocked prone.</p>
+            <p class="indent"><strong><em>Bishop.</em></strong> The case becomes a massive suit of armor, changing your AC to 20, and it stores all damage taken, that damage becomes a threshold that can be used to heal.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Items</set>
+            <set name="cost" currency="-">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">twohand</set>
+            <set name="attunement">false</set>
+            <set name="damage" type="slashing">2d10</set>
+        </setters>
+        <rules>
         </rules>
     </element>
 </elements>
