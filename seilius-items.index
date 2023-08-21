@@ -4,7 +4,7 @@
 		<name>Seiliu's Items</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="seilius-items.index" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/seilius-items.index" />
 		</update>
 	</info>

@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-armor.xml" />
 		</update>
 	</info>
@@ -134,7 +134,7 @@
         </description>
         <setters>
 			<set name="category">Beefer's Armors</set>
-			<set name="cost" currency="gp">-</set>
+			<set name="cost" currency="gp">150</set>
 			<set name="weight" lb="-">-</set>
 			<set name="slot">body</set>
             <set name="type">Armor</set>
@@ -200,6 +200,7 @@
         <setters>
 			<set name="category">Beefer's Armors</set>
 			<set name="weight" lb="-">-</set>
+            <set name="cost" currency="gp">200</set>
 			<set name="slot">body</set>
             <set name="type">Armor</set>
 			<set name="armor">Light</set>
