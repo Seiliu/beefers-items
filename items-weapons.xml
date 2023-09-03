@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -239,6 +239,51 @@
         <rules>
         <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS_WINDSLASH" />
         <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_BLADERUNNERS_WINDBARRAGE" />
+        </rules>
+    </element>
+    <element name="Wolf's Fangs" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_WOLFSFANGS">
+        <description>
+            <p>When you land a successful strike, you may spend 1 Ki point to deal a second impact in the blink of an eye. Phantasmal fangs cover your hand as you flatten it and jab your opponent, and the fangs bite down at the point of impact, but your haste prevents it from doing the fullest damage though: [1d8+4] piercing damage.</p>
+        </description>
+        <sheet usage="Ki" action="Bonus Action">
+            <description>When you land a successful strike, spend 1 Ki point to deal a second impact that deals 1d8+4 piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Iron Wolf" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_IRONWOLF">
+        <description>
+            <p>Use an action to protect yourself and an ally within 5ft of you. Grant yourself +5 Ac, and your ally +2. If the attack is still successful, obtain the benefits of "Rage." (thrice per long rest)</p>
+        </description>
+        <sheet usage="3/Long Rest" action="Action">
+            <description>Use an action to protect yourself and an ally within 5ft of you. Grant yourself +5 Ac, and your ally +2. If the attack is still successful, obtain the benefits of "Rage." </description>
+        </sheet>
+    </element>
+    <element name="Wolf-Wolves" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_WOLFWOLVES">
+        <description>
+            <p>You channel your ki into the wolf marks on your arms, and phantasmal wolves come out of them. It is controlled by the DM, but will assist in the best way that it can. A max of 2 wolves can be activate at once. They disappear in 3 turns, and they assist in clashes.</p>
+        </description>
+        <sheet usage="2/Short Rest" action="Bonus Action">
+            <description>Summon two phantasmal wolves that laugh and snarl respectively. 2 can be activate at once, and they disappear in 3 turns.</description>
+        </sheet>
+    </element>
+    <element name="Wolves' Will" type="Magic Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</supports>
+        <description>
+            <p>Two marks resembling wolves appear on your arms; One is snarling with rage, and the other is howling with laughter.</p>
+            <p><b>This item grants +3 vs AC bonus to unarmed strikes.<b></p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Weapons</set>
+            <set name="damage" type="bludgeoning">2d8+6</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="slot">arms</set>
+            <set name="attunement">true</set>
+            <set name="type">Weapon</set>
+        </setters>
+        <rules>
+        <stat name="ki:points" value="3" />
+        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_WOLFSFANGS" />
+        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_IRONWILL" />
+        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_WOLFWOLVES" />
         </rules>
     </element>
 </elements>

@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -295,17 +295,17 @@
             <stat name="wisdom" value="3" />
         </rules>
     </element>
-    <element name="Silver" type="Class Feature" source="source" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE_SILVER">
+    <element name="Silver" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE_SILVER">
         <sheet>
             <description>The case shifts around into a longsword of sorts. It deals 2d10 damage. The sword can emit certain energies, allowing to deal damage of any type.</description>
         </sheet>
     </element>
-    <element name="Chariot" type="Class Feature" source="source" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE_CHARIOT">
+    <element name="Chariot" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE_CHARIOT">
         <sheet>
             <description>The case shifts into a motorbike. You may seat yourself in it using an action, and your movement speed becomes 200 ft. In the unlikely chance that you run over a creature, they must make either a dexterity or strength saving throw. If they fail, they are knocked prone.</description>
         </sheet>
     </element>
-    <element name="Bishop" type="Class Feature" source="source" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE_BISHOP">
+    <element name="Bishop" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DRIVECASE_BISHOP">
         <sheet>
             <description>The case becomes a massive suit of armor, changing your AC to 20, and it stores all damage taken, that damage becomes a threshold that can be used to heal.</description>
         </sheet>
@@ -343,5 +343,58 @@
             <set name="slot">misc</set>
             <set name="attunement">true</set>
         </setters>
+    </element>
+    <element name="Perfect Counter" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_WILDMAGICCLOAK_PERFECTCOUNTER">
+        <sheet action="Action" usage="3/Short Rest">
+            <description>This cloak grants you the ability to cast third-level counter spell.</description>
+        </sheet>
+    </element>
+    <element name="Wild Magic Surge" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_WILDMAGICCLOAK_WMSURGE">
+        <sheet usage="2/Long Rest">
+            <description>When you are hit with a crit or max damage, your cloak releases a surge of wild magic. Refer to a wild magic chart for the result. If you are not a spellcasting class, it is possible for a wild magic surge to occur when attacking; roll a 1d6; every even number will make your attacks surge with wild magic.</description>
+        </sheet>
+    </element>
+    <element name="Wild Magic Cloak" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_WILDMAGICCLOAK">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Items</set>
+            <set name="cost" currency="gp">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">cloak</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+        	<stat name="spellcasting:attack" value="3" />
+            <stat name="spellcasting:dc" value="3" />
+            <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_WILDMAGICCLOAK_PERFECTCOUNTER" />
+            <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_WILDMAGICCLOAK_WMSURGE" />
+        </rules>
+    </element>
+    <element name="Death Perception" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DEATHPERCEPTION_DP">
+        <sheet action="Bonus Action">
+            <description>You perceive the possibility of death within a target; activating this gives advantage on all called shots. (calling out where you want to hit.)</description>
+        </sheet>
+    </element>
+    <element name="Ally Perception" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DEATHPERCEPTION_AP">
+        <sheet action="Reaction">
+            <description>You can choose to grant 2 allies advantage on called shots of their own.</description>
+        </sheet>
+    </element>
+    <element name="Death Perception" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_DEATHPERCEPTION">
+        <description>
+            <p>Your right iris turns into a skull. When you focus on living creatures, the veins in your eyes and around them visibly pulsate.</p>
+            <p>Usage of this eye causes you to witness <b>Madness</b>, a unique effect that only affects certain players.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Items</set>
+            <set name="cost" currency="gp">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">deathperception</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+        </rules>
     </element>
 </elements>
