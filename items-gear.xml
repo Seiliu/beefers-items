@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -428,7 +428,7 @@
             <set name="cost" currency="gp">-</set>
             <set name="weight" lb="-">-</set>
             <set name="slot">psykosorbs</set>
-            <set name="attunement">false</set>
+            <set name="attunement">true</set>
         </setters>
         <rules>
             <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_KILL" />
