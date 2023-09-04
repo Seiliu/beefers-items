@@ -431,6 +431,9 @@
             <set name="attunement">false</set>
         </setters>
         <rules>
+            <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_KILL" />
+            <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_SAVE" />
+            <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_PROTECT" />
         </rules>
     </element>
 </elements>

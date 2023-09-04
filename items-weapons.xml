@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -269,7 +269,7 @@
         <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</supports>
         <description>
             <p>Two marks resembling wolves appear on your arms; One is snarling with rage, and the other is howling with laughter.</p>
-            <p><b>This item grants +3 vs AC bonus to unarmed strikes.<b></p>
+            <p><b>This item grants +3 vs AC bonus to unarmed strikes.</b></p>
         </description>
         <setters>
             <set name="category">Beefer's Weapons</set>
