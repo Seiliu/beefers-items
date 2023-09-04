@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -386,6 +386,7 @@
         <description>
             <p>Your right iris turns into a skull. When you focus on living creatures, the veins in your eyes and around them visibly pulsate.</p>
             <p>Usage of this eye causes you to witness <b>Madness</b>, a unique effect that only affects certain players.</p>
+            <p>This item grants +2 to death saving throws.</p>
         </description>
         <setters>
             <set name="category">Beefer's Items</set>
@@ -393,6 +394,41 @@
             <set name="weight" lb="-">-</set>
             <set name="slot">deathperception</set>
             <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="perception:misc" value="2" />
+        </rules>
+    </element>
+    <element name="Save" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_SAVE">
+        <sheet action="Bonus Action">
+            <description>Use two stacks of Psychosis to heal an ally for [4d4+4] hit points. You may choose to use one extra stack of Psychosis to heal yourself for half that amount.</description>
+        </sheet>
+    </element>
+    <element name="Kill" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_KILL">
+        <sheet action="Bonus Action">
+            <description>
+                <p>Use one stack of psychosis to attack an enemy. If you use your action, you may make it a set damage. It has three forms: </p>
+                <p>Triple Axel - [3d6+3] Slashing, 10/30 range; you cannot use Kill next turn after using this.</p>
+                <p>Twist - [2d4+4] Fire, 40/50 range; you cannot use Kill or Protect next turn after using this.</p>
+                <p>Figure Eight - [3d8+4] Radiant, 30/75 range; you cannot use Kill, Protect, or Save next turn after using this.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Protect" type="Class Feature" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_PROTECT">
+        <sheet action="Action">
+            <description>Use one stack of Psychosis to grant either +3 AC to yourself or +5 AC to an ally. This can be increased by two by spending one psychosis stack.</description>
+        </sheet>
+    </element>
+    <element name="Psykos Orbs" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS">
+        <description>
+            <p>Three black orbs follow the user. They have three specific uses: to kill, to save, or to protect. It has 6 stacks of 'Psychosis.' You regenerate 3 psychosis every short rest, and all of it during a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Items</set>
+            <set name="cost" currency="gp">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">psykosorbs</set>
+            <set name="attunement">false</set>
         </setters>
         <rules>
         </rules>
