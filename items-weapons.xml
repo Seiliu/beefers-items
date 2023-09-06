@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-weapons.xml" />
 		</update>
 	</info>
@@ -282,7 +282,7 @@
         <rules>
         <stat name="ki:points" value="3" />
         <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_WOLFSFANGS" />
-        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_IRONWILL" />
+        <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_IRONWOLF" />
         <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_WEAPON_WOLVESWILL_WOLFWOLVES" />
         </rules>
     </element>
