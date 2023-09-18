@@ -4,7 +4,7 @@
 		<name>Armors</name>
 		<description></description>
 		<author url="">Seiliu</author>
-		<update version="0.1.8">
+		<update version="0.1.9">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/Seiliu/seilius-items/main/items-gear.xml" />
 		</update>
 	</info>
@@ -434,6 +434,43 @@
             <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_KILL" />
             <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_SAVE" />
             <grant type="Class Feature" id="ID_SEILIU_BEEFERSITEMS_ITEM_PSYKOSORBS_PROTECT" />
+        </rules>
+    </element>
+    <element name="Sigil of Pride" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_PRIDESIGIL">
+        <description>
+            <p>+3 Charisma</p>
+            <p>+5 Strength</p>
+            <p>Your weapon attack bonus is scaled off of your highest stat and grows in strength when fighting stronger enemies. (The more damage they deal, the higher your damage bonus.)</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Items</set>
+            <set name="cost" currency="-">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">misc</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="strength:misc" value="5" />
+            <stat name="charisma:misc" value="3" />
+        </rules>
+    </element>
+    <element name="Sigil of Pride" type="Item" source="Beefer's Items" id="ID_SEILIU_BEEFERSITEMS_ITEM_PRIDESIGIL">
+        <description>
+            <p>+3 AC</p>
+            <p>+1 Constitution</p>
+            <p>Madness- This is a passive granted by the Black Blood. When an enemy is hit they are inflicted with Madness. Merely inflicting madness grants a buff. But an enemy dying while Mad grants you a buff that lasts for an Hour. (Madness is lost when you are successfully hit by the afflicted enemy)</p>
+            <p>Curse of madness- Whenever someone under the madness effect dies, your madness grows stronger. When you rest you will see an entity, and that is your madness. Work against, or in tandem with it. You’re stuck with it forever no matter what.</p>
+        </description>
+        <setters>
+            <set name="category">Beefer's Items</set>
+            <set name="cost" currency="-">-</set>
+            <set name="weight" lb="-">-</set>
+            <set name="slot">misc</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:misc" value="3" />
+            <stat name="constitution:misc" value="1" />
         </rules>
     </element>
 </elements>
